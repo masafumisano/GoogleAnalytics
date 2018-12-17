@@ -1,0 +1,6 @@
+framework module GoogleIDFASupport {
+    export *
+    module * { export * }
+    link framework "AdSupport"
+    link framework "iAd"
+}

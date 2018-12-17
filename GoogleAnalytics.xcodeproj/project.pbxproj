@@ -1,0 +1,246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		21EE2D3A21708B6C008A17AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21EE2D4121708BE5008A17AA /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		21EE2D482170940E008A17AA /* GoogleAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EE2D4B2170940E008A17AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21EE2D5021709475008A17AA /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		21EE2D5B2170BCE8008A17AA /* GoogleIDFASupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleIDFASupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		21EE2D2C21708B6C008A17AA = {
+			isa = PBXGroup;
+			children = (
+				21EE2D3821708B6C008A17AA /* GoogleAnalytics */,
+				21EE2D492170940E008A17AA /* GoogleIDFASupport */,
+				21EE2D3721708B6C008A17AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21EE2D3721708B6C008A17AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21EE2D482170940E008A17AA /* GoogleAnalytics.framework */,
+				21EE2D5B2170BCE8008A17AA /* GoogleIDFASupport.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21EE2D3821708B6C008A17AA /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				21EE2D3A21708B6C008A17AA /* Info.plist */,
+				21EE2D4121708BE5008A17AA /* module.modulemap */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		21EE2D492170940E008A17AA /* GoogleIDFASupport */ = {
+			isa = PBXGroup;
+			children = (
+				21EE2D4B2170940E008A17AA /* Info.plist */,
+				21EE2D5021709475008A17AA /* module.modulemap */,
+			);
+			path = GoogleIDFASupport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21EE2D472170940E008A17AA /* GoogleAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EE2D4D2170940E008A17AA /* Build configuration list for PBXNativeTarget "GoogleAnalytics" */;
+			buildPhases = (
+				21EE2D512170949C008A17AA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleAnalytics;
+			productName = GoogleIDFASupport;
+			productReference = 21EE2D482170940E008A17AA /* GoogleAnalytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21EE2D562170BCE8008A17AA /* GoogleIDFASupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EE2D582170BCE8008A17AA /* Build configuration list for PBXNativeTarget "GoogleIDFASupport" */;
+			buildPhases = (
+				21EE2D572170BCE8008A17AA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleIDFASupport;
+			productName = GoogleIDFASupport;
+			productReference = 21EE2D5B2170BCE8008A17AA /* GoogleIDFASupport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21EE2D2D21708B6C008A17AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					21EE2D472170940E008A17AA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 21EE2D3021708B6C008A17AA /* Build configuration list for PBXProject "GoogleAnalytics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 21EE2D2C21708B6C008A17AA;
+			productRefGroup = 21EE2D3721708B6C008A17AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21EE2D472170940E008A17AA /* GoogleAnalytics */,
+				21EE2D562170BCE8008A17AA /* GoogleIDFASupport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21EE2D512170949C008A17AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_NAME=GoogleAnalyticsServicesiOS_${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL https://dl.google.com/googleanalyticsservices/${BASE_NAME}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleAnalytics/Library/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_DIR}/${TARGET_NAME}/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/libGoogleAnalyticsServices.a -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+		};
+		21EE2D572170BCE8008A17AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_NAME=GoogleAnalyticsServicesiOS_${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL https://dl.google.com/googleanalyticsservices/${BASE_NAME}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_DIR}/${TARGET_NAME}/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/libAdIdAccess.a -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21EE2D3C21708B6C008A17AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 3.17;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21EE2D3D21708B6C008A17AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 3.17;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		21EE2D4E2170940E008A17AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21EE2D4F2170940E008A17AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		21EE2D592170BCE8008A17AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21EE2D5A2170BCE8008A17AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21EE2D3021708B6C008A17AA /* Build configuration list for PBXProject "GoogleAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EE2D3C21708B6C008A17AA /* Debug */,
+				21EE2D3D21708B6C008A17AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21EE2D4D2170940E008A17AA /* Build configuration list for PBXNativeTarget "GoogleAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EE2D4E2170940E008A17AA /* Debug */,
+				21EE2D4F2170940E008A17AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21EE2D582170BCE8008A17AA /* Build configuration list for PBXNativeTarget "GoogleIDFASupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EE2D592170BCE8008A17AA /* Debug */,
+				21EE2D5A2170BCE8008A17AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21EE2D2D21708B6C008A17AA /* Project object */;
+}
